@@ -30,6 +30,7 @@ for block in blocks:
 	fileUrl = block.a['href']
 	title = block.a.contents[0]
 	titleTest = title.find('CSV')
+	print titleTest
 	
 	if titleTest == None:
 		print 'not a csv'
