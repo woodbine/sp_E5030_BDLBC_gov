@@ -29,6 +29,8 @@ for block in blocks:
 
 	fileUrl = block.a['href']
 	title = block.a.contents[0]
+	print title
+	
 	titleTest = title.find('CSV')
 	
 	if titleTest == None:
