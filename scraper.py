@@ -34,10 +34,10 @@ for block in blocks:
 	if 'CSV' in title:
 		if 'CSV)(CSV' in title:
 			csvYr = title.split(' ')[-5]
-			csvMth = title.split(' ')[-6][:3]
+			csvMth = title.split(' ')[-4][:3]
 		else:
 			csvYr = title.split(' ')[-5]
-			csvMth = title.split(' ')[-4][:3]
+			csvMth = title.split(' ')[-6][:3]
 			
 		csvMth = convert_mth_strings(csvMth);
 		filename = entity_id + "_" + csvYr + "_" + csvMth
