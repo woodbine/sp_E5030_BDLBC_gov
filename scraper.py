@@ -36,8 +36,11 @@ for block in blocks:
 			csvYr = title.split(' ')[-5]
 			csvMth = title.split(' ')[-4][:3]
 		else:
-			csvYr = title.split(' ')[-5]
-			csvMth = title.split(' ')[-6][:3]
+			csvYr = title.split(' ')[-4]
+			csvMth = title.split(' ')[-5][:3]
+		
+		if len(csvYr) = 2:
+			csvYr = '20'+csvYr
 			
 		csvMth = convert_mth_strings(csvMth);
 		filename = entity_id + "_" + csvYr + "_" + csvMth
