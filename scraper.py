@@ -29,8 +29,6 @@ for block in blocks:
 
 	fileUrl = block.a['href']
 	title = block.a.contents[0]
-	print title
-	
 	titleTest = title.find('CSV')
 	
 	if titleTest == None:
@@ -38,9 +36,9 @@ for block in blocks:
 	else:
 		# create the right strings for the new filename
 		title = title.upper().strip()
-		csvYr = title.split(' ')[-3]
+		csvYr = title.split(' ')[-5]
 		
-		csvMth = title.split(' ')[-4][:3]
+		csvMth = title.split(' ')[-6][:3]
 		csvMth = convert_mth_strings(csvMth);
 	
 		filename = entity_id + "_" + csvYr + "_" + csvMth
