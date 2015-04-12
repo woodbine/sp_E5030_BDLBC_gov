@@ -39,7 +39,7 @@ for block in blocks:
 			csvYr = title.split(' ')[-4]
 			csvMth = title.split(' ')[-5][:3]
 		
-		if len(csvYr) = 2:
+		if len(csvYr) == 2:
 			csvYr = '20'+csvYr
 			
 		csvMth = convert_mth_strings(csvMth);
