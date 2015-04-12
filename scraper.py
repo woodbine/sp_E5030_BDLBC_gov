@@ -32,7 +32,7 @@ for block in blocks:
 	title = title.upper().strip()
 	
 	if 'CSV' in title:
-		if title.count('CSV') = 2
+		if 'CSV)(CSV' in title:
 			csvYr = title.split(' ')[-5]
 			csvMth = title.split(' ')[-6][:3]
 		else:
