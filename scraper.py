@@ -33,9 +33,8 @@ for block in blocks:
 	
 	if 'CSV' in title:
 		if '(CSV)' in title:
-			print 'new'
-			csvYr = title.split(' ')[-6]
-			csvMth = title.split(' ')[-5][:3]
+			csvYr = title.split(' ')[-5]
+			csvMth = title.split(' ')[-6][:3]
 		else:
 			csvYr = title.split(' ')[-4]
 			csvMth = title.split(' ')[-5][:3]
